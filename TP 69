@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+string QuitarEspacios (string f);
+int main()
+{  
+    string f;
+    cout<<"ingresa una frase"<<endl;
+    getline(cin,f);
+    
+  cout<<QuitarEspacios ( f)<<endl;
+
+    return 0;
+}
+string QuitarEspacios (string f){
+    int i;  
+    for(i=0;i<f.size();i++){
+        if(f[i]==' '){
+            f[i]='_';
+        }
+    }
+    
+
+    return f;
+}
